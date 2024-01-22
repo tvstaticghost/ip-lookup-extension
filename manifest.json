@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "IP Lookup",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "assets/icons8-favicon-16.png"
+        }
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}

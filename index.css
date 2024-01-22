@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #3A3B3C;
+    --blue: whitesmoke;
+    --green: #0DF28D;
+    --white: whitesmoke;
+
+    --red: #F20D72;
+
+    --font: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: var(--background);
+    font-family: var(--font);
+    width: 500px;
+    margin: 0 auto;
+}
+
+.search__wrapper {
+    margin: 1rem 0;
+    display: flex;
+    gap: 5px;
+}
+
+span {
+    color: var(--green);
+}
+
+button, input {
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    color: var(--background);
+}
+
+button:hover {
+    cursor: pointer;
+    transition-duration: 0.5s;
+    translate: 0 -3px;
+}
+
+button:not(:hover) {
+    transition-duration: 0.5s;
+    translate: 0 0;
+}
+
+input {
+    padding: 5px;
+    background-color: var(--background);
+    color: var(--white);
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+img {
+    width: 20px;
+}
+
+.search__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    padding: 0 5px;
+    width: 90%;
+}
+
+.search__wrapper {
+    width: 90%;
+}
+
+.result__wrapper {
+    border: 2px solid var(--blue);
+    padding: 1rem;
+    color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.result {
+    font-size: 1.2rem;
+}
+
+.country__container {
+    border: 2px solid var(--green);
+    padding: 2px 10px;
+    border-radius: 15px;
+    color: var(--background);
+    background-color: var(--green);
+}
+
+.warning__country {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    color: var(--white);
+}
